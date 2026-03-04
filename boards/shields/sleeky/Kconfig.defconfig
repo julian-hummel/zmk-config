@@ -1,19 +1,16 @@
-# Copyright (c) 2024 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
 if SHIELD_SLEEKY_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Sleeky"
+    default "sleeky"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-endif
+endif # SHIELD_SLEEKY_LEFT
 
 if SHIELD_SLEEKY_LEFT || SHIELD_SLEEKY_RIGHT
 
 config ZMK_SPLIT
     default y
 
-endif
+endif # SHIELD_SLEEKY_LEFT || SHIELD_SLEEKY_RIGHT
